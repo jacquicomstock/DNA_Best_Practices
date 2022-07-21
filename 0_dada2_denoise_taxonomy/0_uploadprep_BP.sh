@@ -42,8 +42,8 @@ sbatch \
 	--nodes=1 \
 	--tasks-per-node=32 \
 	--cpus-per-task=1 \
-	--mem=80G \
-	--time=4:00:00 \
+	--mem=60G \
+	--time=2:00:00 \
 	--output=dada2_out \
 	--error=dada2_err \
 	--wrap="Rscript M17_dada2.R"
