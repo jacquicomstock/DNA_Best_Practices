@@ -57,3 +57,6 @@ mv *.txt /home/jcomstock/M17/dada2_output_files/
 mv *.rds /home/jcomstock/M17/dada2_output_files/
 mv dada2_err /home/jcomstock/M17/dada2_output_files/
 mv dada2_out /home/jcomstock/M17/dada2_output_files/
+
+#Download the output files onto local computer, this is done in a local terminal window not in the cluster terminal window
+scp -r jcomstock@pod.cnsi.ucsb.edu:/home/jcomstock/M17/dada2_output_files/ /home/mobaxterm/Desktop/Research/Projects/Methods\ tests/Methods_2022/M17
