@@ -47,3 +47,13 @@ sbatch \
 	--output=dada2_out \
 	--error=dada2_err \
 	--wrap="Rscript M17_dada2.R"
+
+#Once the R script has finished running, move output files to new folder
+cd M17/
+mkdir dada2_output_files
+cd fastqs/
+mv *.fasta /home/jcomstock/M17/dada2_output_files/
+mv *.txt /home/jcomstock/M17/dada2_output_files/
+mv *.rds /home/jcomstock/M17/dada2_output_files/
+mv dada2_err /home/jcomstock/M17/dada2_output_files/
+mv dada2_out /home/jcomstock/M17/dada2_output_files/
